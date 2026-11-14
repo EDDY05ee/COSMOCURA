@@ -1,0 +1,39 @@
+.venv/
+__pycache__/
+*.pyc
+*.db
+.env
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Local databases and sensitive files
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Editor and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python testing and cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
