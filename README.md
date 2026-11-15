@@ -1,221 +1,331 @@
 # COSMOCURA
-### Astronaut Health Intelligence System
+## Astronaut Health Intelligence System
+### Intelligent Healthcare Beyond Earth
+
 **NASA Space Apps Challenge 2026**
 
-<p align="center">
-  A mission-oriented digital health-support workspace designed for human space exploration.
-</p>
+COSMOCURA is a local-first astronaut health-support software prototype designed to help organize crew health information, monitor personal wellness, explore spaceflight health risks, and access structured health guidance through a unified interface.
+
+Our vision is to explore how accessible digital health-support systems could help astronauts manage and understand health-related information during missions where immediate communication with Earth may be limited.
 
 ---
 
-## 🚀 Overview
+## 1. The Challenge
 
-COSMOCURA is an Astronaut Health Intelligence System developed for the NASA Space Apps Challenge 2026.
+Human space exploration introduces health challenges that are very different from those experienced on Earth.
 
-During long-duration space missions, astronauts face unique health challenges, including altered gravity, radiation exposure, isolation, confinement, communication delays, and limited access to medical professionals.
+During space missions, astronauts may encounter:
 
-COSMOCURA explores how an integrated digital health-support workspace could help astronauts organize their health information, monitor personal wellness, record health measurements, and access structured emergency guidance when immediate medical support from Earth may be limited.
+- Radiation exposure
+- Isolation and confinement
+- Distance from Earth and communication delays
+- Altered gravity
+- Hostile and closed environments
 
-The project brings multiple health-support capabilities together in one mission-oriented interface, supported by a local-first software architecture.
+These conditions can affect physical health, mental well-being, medical decision-making, and the continuity of health information.
 
-## 🎯 Problem Statement
+Astronauts are highly trained professionals, but they are not necessarily medical specialists. During a mission, health information must be organized, understandable, and accessible when immediate assistance from Earth is unavailable or delayed.
 
-Astronauts operating in space environments may experience situations where communication with Earth is delayed or immediate medical assistance is unavailable.
+This creates an important question:
 
-Important health information can become difficult to organize when measurements, medical records, wellness information, and emergency resources are separated across different systems.
+**How can technology help astronauts organize health information and access useful health-support guidance when traditional medical support is not immediately available?**
 
-COSMOCURA explores a unified approach to making this information more accessible and understandable for crew members.
+COSMOCURA explores one possible software-based approach to this challenge.
 
-## 💡 Our Solution
+---
 
-COSMOCURA provides a centralized workspace for astronaut health awareness and information management.
+## 2. Our Solution
 
-The platform combines crew health monitoring, guided measurements, medical records, wellness tracking, spaceflight hazard awareness, and emergency guidance.
+COSMOCURA brings several astronaut health-support functions together in one mission-oriented digital workspace.
 
-Its goal is to support health-information organization and personal awareness rather than replace trained medical professionals or mission-approved medical procedures.
+Instead of separating health measurements, wellness information, medical records, and emergency reference information into different tools, COSMOCURA organizes them through a unified interface.
 
-## ✨ Key Features
+The prototype allows users to:
 
-### 1. Mission Overview
-A centralized dashboard presenting crew information and health-related indicators.
+- Maintain crew health information.
+- Record and review health measurements.
+- Complete guided measurement workflows.
+- Explore body-related health information.
+- Record sleep, mood, stress, and fatigue.
+- Maintain medical records.
+- Access categorized emergency reference guidance.
+- Explore important human spaceflight hazards.
+- Prepare a locally generated medical handoff summary.
 
-### 2. Crew Health Monitoring
-Organize and review manually entered health measurements and their history.
+The application follows a local-first approach. Its frontend communicates with a locally running backend, which stores application records in an SQLite database.
 
-### 3. Guided Measurements
-A structured interface to help crew members record health measurements.
+**Important:** COSMOCURA is a software prototype. It is not a clinically validated medical device or an operational spacecraft medical system.
 
-### 4. Interactive Body Explorer
-Explore body-related health information through an interactive interface.
+---
 
-### 5. Medical Records
-Create, organize, and review crew medical records.
+## 3. Key Features
 
-### 6. Crew Wellness
-Record and review wellness information such as:
+### 3.1 Mission Overview
+
+A centralized dashboard that brings together crew-related information and health indicators.
+
+It provides a starting point for navigating the application's main health-support functions.
+
+### 3.2 Crew Health Monitoring
+
+Allows users to record, organize, and review manually entered crew health measurements.
+
+The purpose is to make recorded information easier to access and understand.
+
+### 3.3 Guided Measurements
+
+Provides a structured interface for recording health measurements.
+
+It helps users follow an organized measurement workflow rather than entering information without context.
+
+### 3.4 Interactive Body Explorer
+
+An interactive interface for exploring body-related health information.
+
+It provides a visual way to navigate health-related information.
+
+### 3.5 Emergency Center
+
+Organizes emergency reference information into categories and presents structured guidance with appropriate safety disclaimers.
+
+It is intended as an information-support feature, not a replacement for professional medical procedures or mission-approved emergency protocols.
+
+### 3.6 Medical Records
+
+Allows users to create, organize, and review crew medical records.
+
+Records are stored locally through the application's backend and remain available after refreshing the application.
+
+### 3.7 Crew Wellness
+
+Supports the recording of personal wellness information, including:
+
 - Sleep
 - Mood
 - Stress
 - Fatigue
-- Personal wellness notes
+- Wellness notes
 
-### 7. Emergency Center
-A categorized emergency information interface providing structured guidance and safety disclaimers.
+This feature explores how personal wellness information can be organized alongside other crew health information.
 
-### 8. Spaceflight Hazards
-Explore important human spaceflight hazards and their potential effects on astronaut health.
+### 3.8 Wellness History
 
-### 9. Mission Environment
-A mission-oriented information section for understanding spaceflight environmental considerations.
+Allows users to review previous wellness check-ins and recorded information.
 
-### 10. Health History
-Review recorded health and wellness information to support personal awareness and information continuity.
+It provides a historical view of the information entered into the application.
 
-## 🛰️ NASA Data and Research
+### 3.9 Five Spaceflight Hazards
 
-COSMOCURA's concept and health-support framework are informed by NASA Human Research Program resources.
+Provides an information interface covering five major human spaceflight hazards:
 
-**NASA resources:**
+1. Radiation
+2. Isolation and confinement
+3. Distance from Earth
+4. Altered gravity
+5. Hostile and closed environments
 
-- [5 Hazards of Human Spaceflight](https://www.nasa.gov/hrp/hazards/)
-- [Risks of Human Spaceflight](https://www.nasa.gov/hrp/risks/)
-- [Ongoing HRP Research in Space](https://www.nasa.gov/hrp/ongoing-hrp-research/)
+These areas are informed by NASA Human Research Program resources.
 
-**Additional Space Agency research:**
+### 3.10 Mission Environment Profiles
 
-- [Canadian Space Agency – Monitoring Radiation for Astronaut Health](https://www.asc-csa.gc.ca/eng/news/articles/2026/2026-02-26-monitoring-radiation-astronaut-health.asp)
-- [Canadian Space Agency – Why Do We Conduct Science Experiments in Space?](https://www.asc-csa.gc.ca/eng/iss/science/why-do-we-conduct-science-experiments-in-space.asp)
+Provides mission-related environmental information to help users explore conditions and considerations associated with human spaceflight.
 
-These resources informed the project's research and design. They are not live data integrations.
+### 3.11 Crew Handoff Summary
 
-## 🏗️ System Architecture
+Generates a locally prepared medical handoff brief using available application records.
 
-COSMOCURA uses a frontend-backend architecture.
+The summary can be copied for review and information continuity.
 
-**Frontend**
+The current prototype does not transmit this report to mission control or any spacecraft communication system.
+
+### 3.12 Local Data Persistence
+
+Uses a local SQLite database through the backend to store supported application records.
+
+This allows saved information to remain available when the application is refreshed, provided the local database is retained.
+
+### 3.13 Responsive Interface
+
+Provides a responsive user interface designed to support access through desktop and smaller-screen layouts.
+
+---
+
+## 4. How COSMOCURA Works
+
+The application follows a frontend-and-backend architecture.
+
+### Step 1: User Interaction
+
+The user accesses the COSMOCURA interface and navigates its health-support features.
+
+### Step 2: Information Entry
+
+The user records available crew information, measurements, medical records, or wellness check-ins.
+
+### Step 3: Backend Processing
+
+The React frontend communicates with the Python FastAPI backend through API endpoints.
+
+### Step 4: Local Storage
+
+The backend uses SQLAlchemy to interact with the SQLite database and store supported records.
+
+### Step 5: Information Retrieval
+
+When the user returns to a feature or refreshes the application, saved information can be retrieved from the local backend and displayed again.
+
+### Step 6: Information Organization
+
+The application brings together relevant information through dashboards, history views, and the locally prepared handoff summary.
+
+---
+
+## 5. System Architecture
+
+COSMOCURA is structured into three main layers.
+
+### Frontend Layer
+
+The frontend provides the user interface and application interactions.
+
+Technologies:
 - React
 - JavaScript
 - Vite
-- CSS
 - Lucide React
 - Recharts
 
-**Backend**
+### Backend Layer
+
+The backend handles application requests, data operations, and API communication.
+
+Technologies:
 - Python
 - FastAPI
 - SQLAlchemy
 - Pydantic
-- Pydantic Settings
 
-**Database**
-- SQLite
+### Database Layer
 
-The React frontend communicates with the FastAPI backend through API endpoints. The backend manages application data and stores it in a local SQLite database.
+SQLite provides local database storage for supported application records.
 
-The application can operate locally without requiring cloud connectivity, provided the frontend and backend services are running on the same local environment.
+### Architecture Flow
 
-## 🛠️ Technology Stack
+User
+  |
+  v
+React Frontend
+  |
+  v
+FastAPI Backend
+  |
+  v
+SQLAlchemy
+  |
+  v
+SQLite Database
+
+The frontend and backend communicate locally during prototype operation.
+
+---
+
+## 6. Technology Stack
 
 | Technology | Purpose |
 |---|---|
-| React | User interface |
+| React | Frontend user interface |
 | JavaScript | Application logic |
-| Vite | Frontend development and build |
-| Python | Backend programming |
-| FastAPI | Backend API |
+| Vite | Frontend development and build tooling |
+| Python | Backend programming language |
+| FastAPI | Backend API framework |
 | SQLite | Local database |
 | SQLAlchemy | Database integration |
-| Pydantic | Data validation |
+| Pydantic | Data validation and settings |
 | Lucide React | Interface icons |
 | Recharts | Data visualization |
 | Git | Version control |
-| GitHub | Source code hosting |
+| GitHub | Source-code hosting |
 
-## 📁 Repository Structure
+The prototype was developed using commonly available software development tools and open-source technologies.
 
-```text
+No specialized spacecraft hardware is required to run the current desktop prototype.
+
+---
+
+## 7. Project Structure
+
 COSMOCURA/
-│
-├── backend/
-│   ├── app/
-│   │   ├── api/
-│   │   ├── core/
-│   │   ├── database/
-│   │   ├── models/
-│   │   ├── schemas/
-│   │   ├── services/
-│   │   └── main.py
-│   │
-│   └── requirements.txt
-│
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── features/
-│   │   ├── services/
-│   │   ├── App.jsx
-│   │   ├── App.css
-│   │   ├── index.css
-│   │   └── main.jsx
-│   │
-│   ├── package.json
-│   ├── package-lock.json
-│   ├── index.html
-│   └── vite.config.js
-│
-└── .gitignore
-```
+|
+|-- backend/
+|   |-- app/
+|   |   |-- api/
+|   |   |-- core/
+|   |   |-- database/
+|   |   |-- models/
+|   |   |-- schemas/
+|   |   |-- services/
+|   |   |-- main.py
+|   |-- requirements.txt
+|
+|-- frontend/
+|   |-- public/
+|   |-- src/
+|   |   |-- assets/
+|   |   |-- features/
+|   |   |-- services/
+|   |   |-- App.jsx
+|   |   |-- App.css
+|   |   |-- index.css
+|   |   |-- main.jsx
+|   |-- package.json
+|
+|-- .gitignore
+|-- README.md
 
-## ⚙️ Installation and Setup
+---
 
-Follow these instructions to run COSMOCURA locally.
+## 8. Installation and Local Setup
+
+Anyone with a compatible computer can run the current development version by following these instructions.
 
 ### Prerequisites
 
-Install the following:
+Install:
 
 - Python 3.10 or later
 - Node.js and npm
 - Git
 - Visual Studio Code (recommended)
 
-### 1. Clone the repository
+### Step 1: Clone the Repository
 
-```bash
+Open a terminal and run:
+
 git clone https://github.com/EDDY05ee/COSMOCURA.git
-cd COSMOCURA
-```
 
-### 2. Set up the backend
+Move into the project folder:
+
+cd COSMOCURA
+
+### Step 2: Set Up the Backend
 
 Open a terminal:
 
-```bash
 cd backend
-```
 
 Create a Python virtual environment:
 
-```bash
 py -m venv .venv
-```
 
-Install the dependencies:
+Install the required packages:
 
-**Windows PowerShell:**
-
-```powershell
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-```
 
 Start the backend server:
 
-```powershell
 .\.venv\Scripts\python.exe -m uvicorn app.main:app --reload
-```
 
-The backend will be available at:
+The backend should now be available at:
 
 http://127.0.0.1:8000
 
@@ -227,113 +337,224 @@ Health check:
 
 http://127.0.0.1:8000/api/health
 
-### 3. Set up the frontend
+### Step 3: Set Up the Frontend
 
-Open a second terminal at the project root:
+Open a second terminal.
 
-```bash
+From the project root, run:
+
 cd frontend
-```
 
 Install frontend dependencies:
 
-```powershell
-npm.cmd install
-```
+npm install
 
 Start the development server:
 
-```powershell
-npm.cmd run dev
-```
+npm run dev
 
-Open the application:
+Open the local address displayed by Vite, normally:
 
 http://localhost:5173
 
-**Important:** Keep both the frontend and backend terminals running while using the application.
+**Windows PowerShell note:** If PowerShell blocks npm.ps1 because of its execution policy, use `npm.cmd install` and `npm.cmd run dev` instead.
 
-## 🔒 Data, Privacy and Safety
+### Step 4: Use the Application
 
-COSMOCURA is designed around local application operation.
+Keep both backend and frontend terminals running while using the application.
 
-Current prototype considerations:
-
-- Application records are stored using a local SQLite database.
-- The backend must be running for frontend API operations.
-- The current SQLite database is not encrypted.
-- No cloud synchronization is implemented.
-- No spacecraft sensors or medical monitoring hardware are connected.
-
-Users should not enter real sensitive medical information into this educational prototype.
-
-## ⚠️ Current Limitations
-
-COSMOCURA is an educational software prototype.
-
-It is:
-- Not a clinically validated medical device.
-- Not tested or certified for spaceflight operations.
-- Not connected to NASA systems or mission control.
-- Not connected to spacecraft sensors or radiation-monitoring instruments.
-- Not equipped with a runtime AI/ML medical model.
-- Based on manually entered measurements.
-- Not a replacement for professional medical advice or mission-approved procedures.
-
-Emergency information is provided for prototype demonstration and must not replace crew training or mission-approved medical protocols.
-
-## 🔭 Future Development
-
-Potential future development areas include:
-
-- Stronger data protection and encryption.
-- Expert-reviewed astronaut medical information.
-- Validated medical hardware integration.
-- More advanced offline capabilities.
-- Mission-approved emergency procedure integration.
-- Improved accessibility and multilingual interaction.
-- Further testing with relevant healthcare and aerospace experts.
-
-These are future development goals, not currently implemented capabilities.
-
-## 👥 Team COSMOCURA
-
-**NASA Space Apps Challenge 2026**
-
-- Edwin Vinod
-- Nandha Hari
-- Anupama A B
-
-## 🎥 Project Demonstration
-
-**30-second project demonstration:**
-
-https://youtu.be/UmIzZ4BTYQA
-
-**Seven-slide presentation:**
-
-https://drive.google.com/file/d/1Y--tl8WQXslW3HR4BqSGiOXNf24AJ1OW/view?usp=drivesdk
-
-## 🌍 Project Repository
-
-GitHub:
-
-https://github.com/EDDY05ee/COSMOCURA
-
-## 🤖 AI Assistance Disclosure
-
-AI assistance was used during project ideation, research synthesis, software development, coding and debugging support, and documentation preparation.
-
-The submitted prototype does not currently integrate a runtime AI/ML model. Its demonstrated application features use programmed application logic and locally stored data.
-
-## ❤️ Our Vision
-
-We believe health information should remain accessible, understandable, and useful, even when humanity travels beyond Earth.
-
-COSMOCURA represents our exploration of how technology can support the health and wellbeing of future space explorers.
-
-**COSMOCURA — Intelligent Healthcare Beyond Earth.**
+The frontend requires the backend to be available for database-backed features.
 
 ---
 
-*Developed for the NASA Space Apps Challenge 2026.*
+## 9. NASA and Space Agency Research
+
+COSMOCURA was developed with reference to publicly available spaceflight health and human research resources.
+
+### NASA Human Research Program
+
+**NASA – 5 Hazards of Human Spaceflight**
+
+https://www.nasa.gov/hrp/hazards/
+
+**NASA – Risks of Human Spaceflight**
+
+https://www.nasa.gov/hrp/risks/
+
+**NASA – Ongoing HRP Research in Space**
+
+https://www.nasa.gov/hrp/ongoing-hrp-research/
+
+### Canadian Space Agency
+
+**Monitoring Radiation for Astronaut Health**
+
+https://www.asc-csa.gc.ca/eng/news/articles/2026/2026-02-26-monitoring-radiation-astronaut-health.asp
+
+**Why Do We Conduct Science Experiments in Space?**
+
+https://www.asc-csa.gc.ca/eng/iss/science/why-do-we-conduct-science-experiments-in-space.asp
+
+These resources inform the project's understanding of astronaut health, spaceflight hazards, radiation, and human research in space.
+
+They are research references, not live data feeds integrated into the application.
+
+---
+
+## 10. Testing and Current Development Status
+
+The prototype has been manually tested for important application workflows, including:
+
+- Adding, editing, and deleting crew information.
+- Navigating the Mission Overview and application sections.
+- Recording guided health measurements.
+- Reviewing saved health information.
+- Creating and reviewing medical records.
+- Checking medical record persistence after refreshing.
+- Recording wellness check-ins.
+- Reviewing wellness history.
+- Accessing emergency categories and guidance.
+- Using the medical handoff summary.
+- Checking responsive layouts on smaller screens.
+
+These checks represent prototype-level functional testing, not clinical validation or operational spaceflight testing.
+
+---
+
+## 11. Privacy, Safety, and Limitations
+
+COSMOCURA is designed as an educational and experimental software prototype.
+
+The current implementation has important limitations:
+
+- Health measurements are entered manually.
+- The application does not connect to spacecraft sensors.
+- No live NASA, CSA, or mission-control system integration is implemented.
+- The prototype does not transmit information through spacecraft communication systems.
+- The SQLite database is not encrypted in the current implementation.
+- The application does not currently contain an integrated runtime AI or machine-learning model.
+- Emergency information is not a substitute for professional medical advice or mission-approved procedures.
+- The system has not been clinically validated or operationally tested in spaceflight.
+
+The local-first design demonstrates how supported information can be stored and accessed through a locally running application. It does not establish flight readiness or guarantee uninterrupted operation under spacecraft conditions.
+
+**COSMOCURA must not be used as a substitute for qualified medical professionals, validated medical systems, or official emergency procedures.**
+
+---
+
+## 12. Future Development
+
+Our long-term vision is to explore how COSMOCURA could evolve into a more capable astronaut health-support platform.
+
+Potential future directions include:
+
+- Stronger data protection and encryption.
+- Expert-reviewed and validated health guidance.
+- Improved offline operation and resource efficiency.
+- Integration with validated medical sensors, subject to appropriate testing and approval.
+- More advanced health data visualization.
+- Improved accessibility and multilingual interaction.
+- Mission-approved data exchange and communication capabilities.
+- Further research into AI-assisted health information support.
+
+These are future development goals, not capabilities claimed by the current prototype.
+
+---
+
+## 13. Creativity and Innovation
+
+The central idea behind COSMOCURA is to bring multiple astronaut health-support functions into one organized digital environment.
+
+Its approach combines health measurements, wellness tracking, medical records, emergency reference information, spaceflight hazard awareness, and handoff preparation.
+
+The local-first architecture explores an important consideration for future space missions: how health-related information might remain accessible through local application infrastructure when external connectivity is limited.
+
+Rather than presenting a single isolated health feature, COSMOCURA explores a connected workflow for organizing astronaut health information.
+
+---
+
+## 14. Intended Impact
+
+COSMOCURA explores the potential of accessible digital tools to support health-information organization during human space exploration.
+
+Its intended contribution is to:
+
+- Improve the organization of crew health information.
+- Make recorded measurements easier to review.
+- Support awareness of personal wellness.
+- Bring medical records and health information together.
+- Provide structured access to emergency reference information.
+- Explore information continuity through locally prepared handoff summaries.
+
+The broader vision is to contribute ideas toward more accessible, understandable, and mission-oriented digital health-support technologies.
+
+---
+
+## 15. Team
+
+**Team COSMOCURA**
+
+A student innovation team participating in the NASA Space Apps Challenge 2026.
+
+Our team brings together interests in:
+
+- Artificial Intelligence and Machine Learning
+- Software development
+- Healthcare technology
+- Research and problem-solving
+- Collaborative innovation
+
+We believe meaningful innovation begins with understanding real-world challenges and developing practical solutions through teamwork.
+
+---
+
+## 16. Project Demonstration and Resources
+
+### Live Project Source Code
+
+GitHub Repository:
+
+https://github.com/EDDY05ee/COSMOCURA
+
+### Project Demonstration
+
+30-second demonstration video:
+
+https://youtu.be/UmIzZ4BTYQA
+
+### Project Presentation
+
+Seven-slide presentation:
+
+https://drive.google.com/file/d/1pO3xX034TSnjv91PRf4n18PbZI0nP5yI/view?usp=drivesdk
+
+---
+
+## 17. AI Assistance Disclosure
+
+AI-assisted tools were used during project development for brainstorming, research assistance, software architecture guidance, code generation, debugging, documentation, and presentation preparation.
+
+The team directed the project, made development decisions, and reviewed and tested the application with AI assistance.
+
+The current COSMOCURA prototype does not contain an integrated runtime AI or machine-learning model. Its demonstrated application features operate through programmed application logic and locally stored data.
+
+Any AI-generated visual assets included in submitted materials should be visibly identified in accordance with NASA Space Apps Challenge requirements.
+
+---
+
+## 18. Project Information
+
+**Project:** COSMOCURA  
+**Category:** Astronaut Health / Space Health Technology  
+**Event:** NASA Space Apps Challenge 2026  
+**Project Type:** Local-first software prototype  
+**Frontend:** React  
+**Backend:** Python / FastAPI  
+**Database:** SQLite  
+**Repository:** https://github.com/EDDY05ee/COSMOCURA
+
+---
+
+### Technology that supports health, wherever humanity travels.
+
+**COSMOCURA — Intelligent Healthcare Beyond Earth.**
